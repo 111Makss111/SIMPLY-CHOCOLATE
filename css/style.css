@@ -17,6 +17,14 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.container-nerrow {
+  width: 100%;
+  max-width: 1086px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .header-container {
   display: flex;
   align-items: center;
@@ -38,10 +46,7 @@ body {
   color: #fd9222;
   transition: color 0.3s ease-in-out, cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-icon {
-}
-.header-navigation {
-}
+
 .header-list {
   display: flex;
   align-items: center;
@@ -60,5 +65,71 @@ body {
   align-items: center;
   gap: 14px;
 }
-.header-social-link {
+/* -------------------- HERO ------------------------------- */
+.hero {
+  border-radius: 30px;
+  background-color: rgba(17, 17, 17, 0.6);
+  padding-top: 375px;
+  padding-bottom: 40px;
+  margin-bottom: 80px;
+}
+
+.hero-content {
+}
+.hero-title {
+  color: rgba(255, 255, 255, 1);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: -3%;
+  text-align: left;
+  max-width: 484px;
+  margin-bottom: 32px;
+}
+.hero-btn-buy {
+  width: 144px;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 14;
+  padding: 14px 40px 14px 40px;
+  color: rgba(255, 255, 255, 1);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
+  border-radius: 100px;
+  background: rgba(253, 146, 34, 1);
+}
+.hero-btn-made {
+  display: flex;
+  padding: 14px 40px 14px 40px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 100px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.hero-btn-img {
+  color: rgba(255, 255, 255, 1);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -3%;
+  text-align: left;
+  display: block;
+  margin-left: auto;
+}
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }

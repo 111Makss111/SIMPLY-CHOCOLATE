@@ -87,12 +87,7 @@ body {
   margin-bottom: 32px;
 }
 .hero-btn-buy {
-  width: 144px;
-  height: 45px;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
   gap: 14;
   padding: 14px 40px 14px 40px;
   color: rgba(255, 255, 255, 1);
@@ -100,7 +95,6 @@ body {
   font-size: 14px;
   font-weight: 600;
   line-height: 17px;
-  letter-spacing: 0%;
   text-align: left;
   border-radius: 100px;
   background: rgba(253, 146, 34, 1);
@@ -114,7 +108,6 @@ body {
   font-size: 14px;
   font-weight: 600;
   line-height: 17px;
-  letter-spacing: 0%;
   text-align: left;
 }
 .hero-btn-img {
@@ -123,7 +116,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
-  letter-spacing: -3%;
+  letter-spacing: 0.3em;
   text-align: left;
   display: block;
   margin-left: auto;
@@ -132,4 +125,46 @@ body {
   display: flex;
   align-items: center;
   gap: 14px;
+}
+/* -------------------- ADVANTAGES ------------------------------- */
+.advantages {
+  background-color: rgba(30, 24, 35, 1);
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+.advantages-list {
+  display: flex;
+  align-items: center;
+  gap: 88px;
+}
+.advantages-item {
+}
+.advantages-img {
+}
+.advantages-title {
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: left;
+  margin-bottom: 18px;
+}
+.advantages-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.2em;
+  text-align: left;
 }

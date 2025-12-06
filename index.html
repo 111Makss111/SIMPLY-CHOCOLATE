@@ -18,7 +18,11 @@
 <body>
     <header class="header">
         <div class="container header-container">
-            <a class="header-logo" href="#">SIMPLY CHOCOLATE <img class="header-icon" src="./Vector.png" alt=""></a>
+            <a class="header-logo" href="#">SIMPLY CHOCOLATE
+                <svg class="header-icon">
+                    <use xlink:href="./img/icon.svg#icon-chocolate"></use>
+                </svg>
+            </a>
             <nav class="header-navigation">
                 <ul class="header-list">
                     <li class="header-item">
@@ -59,17 +63,21 @@
     </header>
     <main>
         <section class="hero">
-            <div class="hero-content container-narrow">
-                <h1 class="hero-title">Treat yourself or a loved one to
-                    our finest ingredients for a moment
-                    of pure delight!</h1>
-                <div class="hero-buttons">
-                    <button class="hero-btn-buy">Buy now</button>
-                    <button class="hero-btn-made">How it’s made</button>
-                    <button class="hero-btn-img">
-                        <span>scroll down</span>
-                        <img src="" alt="" aria-hidden="true">
-                    </button>
+            <div class="container hero-container">
+                <div class="hero-content container-narrow">
+                    <h1 class="hero-title">Treat yourself or a loved one to
+                        our finest ingredients for a moment
+                        of pure delight!</h1>
+                    <div class="hero-buttons">
+                        <button class="hero-btn-buy">Buy now</button>
+                        <button class="hero-btn-made">How it’s made</button>
+                        <a href="#" class="hero-btn-img">
+                            <span class="hero-btn-fixed">scroll down</span>
+                            <svg class="hero-btn-icon">
+                                <use xlink:href="./img/icon.svg#icon-2"></use>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>

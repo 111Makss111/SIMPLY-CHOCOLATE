@@ -202,6 +202,16 @@ body {
   gap: 88px;
 }
 .advantages-item {
+  position: relative;
+}
+.advantages-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 124px;
+  background-color: rgba(255, 255, 255, 0.1);
+  top: 60px;
+  right: -44px;
 }
 .advantages-icon {
   fill: transparent;
@@ -228,20 +238,14 @@ body {
 .advantages-icon {
   fill: #fd9222;
   stroke: #fd9222;
-  width: 28px;
-  height: 28px;
+  width: 58px;
+  height: 58px;
   margin-bottom: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  padding: 10px;
 }
-.advantages-arrow {
-  width: 1px;
-  height: 120px;
-  background-color: aliceblue;
-  position: relative;
-  left: 350px;
-  top: -150px;
-  display: flex;
-  align-items: baseline;
-}
+
 /** -------------------- TASTE ------------------------------- */
 .taste {
   margin-bottom: 120px;
@@ -303,10 +307,6 @@ body {
   background: #1e1823;
 }
 .taste-item-img {
-  margin-bottom: 36px;
-}
-.taste-item-text:nth-child(7) {
-  color: rgba(255, 255, 255, 1);
 }
 
 .taste-item-text {
@@ -316,6 +316,10 @@ body {
   line-height: 18px;
   letter-spacing: 0.02em;
   text-align: left;
+  margin-top: 18px;
+}
+.taste-item-text-white {
+  color: rgba(255, 255, 255, 1);
 }
 .taste-item-icon {
   width: 28px;
@@ -335,6 +339,17 @@ body {
   border: 1px solid #fd9222;
   border-radius: 50%;
   padding: 6px;
+}
+.taste-item-info {
+  display: none;
+}
+.taste-item-info-title {
+}
+.taste-item-info-btn {
+}
+.taste-item-info-button {
+}
+.taste-item-info-text {
 }
 /** -------------------- MADE ------------------------------- */
 .made {
@@ -576,7 +591,7 @@ body {
   display: flex;
   align-items: baseline;
   gap: 50px;
-  margin-bottom: 78px;
+  margin-bottom: 54px;
 }
 .footer-text {
   width: 300px;
@@ -654,8 +669,33 @@ body {
   letter-spacing: -0.02em;
   text-align: left;
 }
-.footer-input {
+.footer-menu-link:hover {
+  color: #fd9222;
+  transition: color 0.3s ease-in-out, cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer-input {
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  width: 313px;
+  height: 52px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  padding-left: 20px;
+  margin-right: 8px;
+}
+.footer-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
 .footer-btn {
   color: rgba(255, 255, 255, 1);
   font-family: Montserrat;
@@ -673,4 +713,11 @@ body {
   height: 24px;
   fill: transparent;
   stroke: rgba(255, 255, 255, 1);
+}
+.footer-width-arrow {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 24px;
 }

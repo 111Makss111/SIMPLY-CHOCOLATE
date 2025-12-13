@@ -499,7 +499,7 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-open">
         <div class="model">
             <button type="button" class="model-close-btn">
                 <svg class="model-close-icon">
@@ -507,19 +507,36 @@
                 </svg>
             </button>
             <p class="model-text">LEAVE A REVIEW ABOUT <span class="text-orenge">OUR CHOCOLATE</span></p>
-            <form class="model-form">
+            <form class="model-form" action="#">
                 <label class="model-label">Name
-                    <input class="model-input" type="text" placeholder="Your name">
+                    <!-- <svg class="model-icon">
+                        <use xlink:href="./img/icon.svg#icon-user"></use>
+                    </svg> -->
+                    <input class="model-input" type="text" required placeholder="Your name">
                 </label>
                 <label class="model-label">Email
-                    <input class="model-input" type="email" placeholder="Your email">
+                    <!-- <svg class="model-icon">
+                        <use xlink:href="./img/icon.svg#icon-mail"></use>
+                    </svg> -->
+                    <input class="model-input" type="email" required placeholder="Your email">
                 </label>
                 <label class="model-label">Phone number
-                    <input class="model-input" type="email" placeholder="Phone number">
+                    <!-- <svg class="model-icon">
+                        <use xlink:href="./img/icon.svg#icon-phone"></use>
+                    </svg> -->
+                    <input class="model-input" type="tel" required placeholder="Phone number">
                 </label>
                 <label class="model-label">Comment
                     <textarea class="model-textarea" placeholder="Enter text"></textarea>
                 </label>
+                <div class="model-policy">
+                    <input class="model-input-checkbox" type="checkbox" name="" id="">
+                    <p class="model-text-policy">I accept the terms and conditions of the <span
+                            class="text-orenge">Privacy
+                            Policy</span></p>
+                </div>
+                <button class="model-btn" type="submit">Send</button>
+            </form>
         </div>
     </div>
 </body>

@@ -814,6 +814,9 @@ body {
 }
 .model-form {
 }
+.model-input-wrapper {
+  position: relative;
+}
 .model-label {
   color: rgba(64, 64, 64, 0.3);
   font-family: Montserrat;
@@ -849,6 +852,15 @@ body {
   height: 24px;
   fill: transparent;
   stroke: rgba(17, 17, 17, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: stroke 300ms ease;
+}
+.model-icon:hover {
+  stroke: #fd9222;
 }
 .model-input-checkbox {
 }

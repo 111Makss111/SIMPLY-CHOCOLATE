@@ -7,6 +7,9 @@ body {
 .text-orenge {
   color: rgba(253, 146, 34, 1);
 }
+.item-hidden {
+  display: none;
+}
 .header {
   width: 100%;
   padding-top: 26px;
@@ -199,15 +202,7 @@ body {
 .advantages-item {
   position: relative;
 }
-/* .advantages-item:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 124px;
-  background-color: rgba(255, 255, 255, 0.1);
-  top: 60px;
-  right: -44px;
-} */
+
 .advantages-icon {
   fill: transparent;
   stroke: rgba(255, 255, 255, 1);
@@ -249,7 +244,6 @@ body {
 
 /** -------------------- TASTE ------------------------------- */
 .taste {
-  margin-bottom: 80px;
 }
 .taste-title {
   font-size: 20px;
@@ -338,7 +332,6 @@ body {
 }
 /** -------------------- MADE ------------------------------- */
 .made {
-  margin-bottom: 80px;
 }
 .made-content {
   display: flex;
@@ -362,6 +355,7 @@ body {
   letter-spacing: -0.03em;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 80px;
   margin-bottom: 32px;
 }
 .made-img {
@@ -383,8 +377,7 @@ body {
   list-style: disc;
   gap: 18px;
 }
-.made-item {
-}
+
 .made-text {
   color: rgba(17, 17, 17, 1);
   font-size: 14px;
@@ -395,7 +388,6 @@ body {
 }
 /** -------------------- PRODUCTS ------------------------------- */
 .products {
-  margin-bottom: 120px;
 }
 .products-title {
   font-size: 24px;
@@ -404,14 +396,17 @@ body {
   letter-spacing: -0.03em;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 80px;
   margin-bottom: 50px;
 }
 .products-list {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   row-gap: 24px;
   column-gap: 18px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .products-item {
   width: 270px;
@@ -467,7 +462,6 @@ body {
 }
 /** -------------------- SELLERS ------------------------------- */
 .sellers {
-  margin-bottom: 120px;
 }
 .sellers-title {
   font-size: 24px;
@@ -476,10 +470,13 @@ body {
   letter-spacing: -0.03em;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 80px;
   margin-bottom: 50px;
 }
 .sellers-list {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   gap: 16px;
 }
@@ -493,6 +490,8 @@ body {
   background: rgba(255, 255, 255, 1);
 }
 .sellers-img {
+  width: 335px;
+  height: 464px;
   border-radius: 15px 15px 0px 0px;
 }
 .sellers-text {
@@ -540,7 +539,6 @@ body {
 }
 /** -------------------- LOVED ------------------------------- */
 .loved {
-  margin-bottom: 120px;
 }
 .loved-title {
   font-size: 24px;
@@ -549,13 +547,15 @@ body {
   letter-spacing: -0.03em;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-top: 80px;
+  margin-bottom: 52px;
 }
 .loved-list {
   display: flex;
-  align-items: baseline;
-  gap: 28px;
-  margin-bottom: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 44px;
 }
 .loved-item {
   width: 360px;
@@ -615,13 +615,14 @@ body {
 }
 .footer-info {
   display: flex;
-  align-items: baseline;
-  gap: 50px;
-  margin-bottom: 54px;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 32px;
 }
 .footer-text {
   width: 300px;
-  height: 68px;
+  height: 56px;
   font-size: 28px;
   font-weight: 500;
   line-height: 34px;
@@ -632,6 +633,9 @@ body {
 }
 
 .footer-social {
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .footer-soc-title {
   color: rgba(255, 255, 255, 1);
@@ -646,11 +650,11 @@ body {
   align-items: center;
   gap: 14px;
 }
-.footer-soc-item {
-}
-.footer-soc-link {
-}
 .footer-contact {
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
 }
 .footer-contact-title {
   color: rgba(255, 255, 255, 1);
@@ -665,8 +669,6 @@ body {
   flex-direction: column;
   gap: 4px;
 }
-.footer-contact-item {
-}
 .footer-contact-link {
   color: rgba(255, 255, 255, 1);
   font-size: 14px;
@@ -676,16 +678,17 @@ body {
   text-align: center;
 }
 .footer-subscribe {
-  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .footer-menu {
   display: flex;
-  align-items: center;
-  gap: 24px;
-  padding: 18px 0px;
-  flex-grow: 1;
-}
-.footer-menu-item {
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-bottom: 32px;
 }
 .footer-menu-link {
   color: rgba(255, 255, 255, 1);
@@ -699,19 +702,24 @@ body {
 .footer-menu-link:hover {
   color: #fd9222;
 }
+.footer-subscribe-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+}
 .footer-input {
   border: 1.5px solid rgba(255, 255, 255, 0.15);
   border-radius: 30px;
-  width: 313px;
-  height: 52px;
+  width: 207px;
+  height: 46px;
   color: rgba(255, 255, 255, 0.5);
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 22px;
-  letter-spacing: -0.02em;
+  line-height: 17px;
+  letter-spacing: -2%;
   text-align: left;
   padding-left: 20px;
-  margin-right: 8px;
 }
 .footer-input::placeholder {
   color: rgba(255, 255, 255, 0.5);
@@ -724,15 +732,14 @@ body {
 
 .footer-btn {
   color: rgba(255, 255, 255, 1);
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 600;
-  line-height: 17px;
-  text-align: left;
+  line-height: 16px;
+  text-align: center;
   border-radius: 100px;
   background: rgba(253, 146, 34, 1);
   display: flex;
-  padding: 17px 40px 17px 40px;
+  padding: 14px 26px;
 }
 .footer-soc-icon {
   width: 24px;
@@ -745,11 +752,11 @@ body {
   stroke: #fd9222;
 }
 .footer-width-arrow {
-  display: block;
-  width: 100%;
+  display: none;
+  /* width: 100%;
   height: 1px;
   background-color: rgba(255, 255, 255, 0.1);
-  margin-bottom: 24px;
+  margin-bottom: 24px; */
 }
 .backdrop {
   width: 100%;

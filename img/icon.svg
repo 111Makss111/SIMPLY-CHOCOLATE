@@ -1,5 +1,8 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="icon-icon" viewBox="0 0 34 32">
+<path d="M13.289 32c1.467 0 2.576-0.563 3.327-1.69l16.246-24.484c0.27-0.399 0.469-0.792 0.598-1.179 0.129-0.399 0.194-0.78 0.194-1.144 0-1.009-0.352-1.842-1.056-2.499-0.692-0.669-1.549-1.003-2.57-1.003-0.704 0-1.302 0.141-1.795 0.422-0.481 0.27-0.939 0.739-1.373 1.408l-13.641 21.421-6.829-8.185c-0.739-0.857-1.666-1.285-2.781-1.285-1.044 0-1.907 0.334-2.587 1.003s-1.021 1.508-1.021 2.517c0 0.458 0.070 0.892 0.211 1.303 0.153 0.399 0.428 0.816 0.827 1.25l9.065 10.684c0.833 0.974 1.895 1.461 3.186 1.461z"></path>
+</symbol>
 <symbol id="icon-mail" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M26.667 5.333c1.467 0 2.667 1.2 2.667 2.667v16c0 1.467-1.2 2.667-2.667 2.667h-21.333c-1.467 0-2.667-1.2-2.667-2.667v-16c0-1.467 1.2-2.667 2.667-2.667h21.333z"></path>
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M29.333 8l-13.333 9.333-13.333-9.333"></path>

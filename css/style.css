@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  background-color: rgba(250, 250, 250, 1);
 }
 .text-orenge {
   color: rgba(253, 146, 34, 1);
@@ -12,20 +13,16 @@ body {
   padding-bottom: 36px;
 }
 .container {
-  width: 100%;
-  max-width: 1200px;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
 }
 .container-narrow {
-  width: 100%;
-  max-width: 1086px;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
 }
 .header-container {
   display: flex;
@@ -180,8 +177,8 @@ body {
 /* -------------------- ADVANTAGES ------------------------------- */
 .advantages {
   background-color: rgba(30, 24, 35, 1);
-  padding-bottom: 50px;
-  padding-top: 70px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 .visually-hidden {
   position: absolute;
@@ -196,13 +193,13 @@ body {
 }
 .advantages-list {
   display: flex;
-  align-items: baseline;
-  gap: 88px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .advantages-item {
   position: relative;
 }
-.advantages-item:not(:last-child)::after {
+/* .advantages-item:not(:last-child)::after {
   content: "";
   position: absolute;
   width: 1px;
@@ -210,7 +207,7 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   top: 60px;
   right: -44px;
-}
+} */
 .advantages-icon {
   fill: transparent;
   stroke: rgba(255, 255, 255, 1);
@@ -233,52 +230,43 @@ body {
   letter-spacing: 0.02em;
   text-align: left;
 }
+.advantages-wrap-icon {
+  border: 1px solid rgba(242, 241, 241, 0.3);
+  border-radius: 50%;
+  width: 62px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+}
 .advantages-icon {
   fill: #fd9222;
   stroke: #fd9222;
-  width: 58px;
-  height: 58px;
-  margin-bottom: 22px;
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  border-radius: 50%;
-  padding: 10px;
+  width: 32px;
+  height: 32px;
 }
 
 /** -------------------- TASTE ------------------------------- */
 .taste {
-  margin-bottom: 120px;
-}
-.taste-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 120px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 .taste-title {
-  width: 412px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
-  line-height: 28px;
+  line-height: 24px;
   letter-spacing: 0.03em;
-  text-align: center;
   text-transform: uppercase;
-  margin-bottom: 28px;
-}
-.taste-text {
-  width: 486px;
-  color: rgba(17, 17, 17, 1);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0.02em;
   text-align: center;
+  margin-top: 80px;
 }
 .taste-list {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 32px;
+  margin-top: 28px;
+  gap: 20px;
 }
 
 .taste-item {
@@ -304,9 +292,6 @@ body {
 .taste-item:nth-child(3) {
   background: #1e1823;
 }
-.taste-item-img {
-}
-
 .taste-item-text {
   color: rgba(17, 17, 17, 1);
   font-size: 14px;
@@ -319,24 +304,26 @@ body {
 .taste-item-text-white {
   color: rgba(255, 255, 255, 1);
 }
-.taste-item-icon {
-  width: 28px;
-  height: 28px;
-  display: block;
-  margin-left: auto;
-  border: 1px solid rgba(255, 255, 255, 1);
+.taste-item-wrap-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(250, 250, 250, 1);
   border-radius: 50%;
-  padding: 6px;
-  cursor: pointer;
+  margin-left: auto;
   fill: transparent;
-  stroke: rgb(240, 231, 231);
+  stroke: #ffffff;
+  padding: 6px;
+}
+.taste-item-wrap-black {
+  border: 1px solid #fd9222;
+  stroke: #fd9222;
 }
 .taste-item-icons {
-  fill: transparent;
-  stroke: #fd9222;
-  border: 1px solid #fd9222;
-  border-radius: 50%;
-  padding: 6px;
+  width: 10px;
+  height: 10px;
 }
 .taste-item-info {
   display: none;
@@ -351,33 +338,36 @@ body {
 }
 /** -------------------- MADE ------------------------------- */
 .made {
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 .made-content {
   display: flex;
-  align-items: center;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 .made-content-text {
   display: flex;
   flex-direction: column;
-  width: 516px;
-  height: 400px;
-  justify-content: center;
-  border: 32px solid rgb(255, 255, 255);
+  margin: 0 auto;
+  width: 308px;
+  height: 416px;
+  padding: 14px 20px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 1);
 }
 .made-title {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
-  line-height: 28px;
+  line-height: 24px;
   letter-spacing: -0.03em;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 }
 .made-img {
-  width: 600px;
-  height: 400px;
+  width: 335px;
+  height: 500px;
+  border-radius: 15px;
 }
 .made-title-text {
   color: rgba(17, 17, 17, 1);
@@ -385,13 +375,13 @@ body {
   font-weight: 600;
   line-height: 24px;
   text-align: left;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 .made-list {
   display: flex;
   flex-direction: column;
   list-style: disc;
-  gap: 24px;
+  gap: 18px;
 }
 .made-item {
 }
@@ -862,20 +852,38 @@ body {
 .model-icon:hover {
   stroke: #fd9222;
 }
-.model-input-checkbox {
+.model-checkbox-policy {
+  display: flex;
+  align-items: center;
+  margin-bottom: 42px;
 }
-.model-text-policy {
+.model-checkbox-text {
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
   letter-spacing: -0.02em;
   text-align: left;
-  margin-bottom: 40px;
-}
-.model-policy {
   display: flex;
-  align-items: baseline;
-  gap: 12px;
+}
+.model-checkbox-span {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #1e1823;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  margin-right: 12px;
+}
+.model-checkbox:checked + .model-checkbox-text .model-checkbox-span {
+  background-color: #fd9222;
+  fill: #ffffff;
+  border: none;
+}
+.model-checkbox-icon {
+  width: 10px;
+  height: 10px;
 }
 .model-btn {
   color: rgba(255, 255, 255, 1);
